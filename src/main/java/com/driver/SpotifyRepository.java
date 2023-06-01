@@ -60,7 +60,7 @@ public class SpotifyRepository {
     }
 
     public Album createAlbum(String title, String artistName) {
-        Artist artist = new Artist(artistName);
+        Artist artist = createArtist(artistName);
         for(Album album : albums){
             if(album.getTitle().equals(title)){
                 return album;
