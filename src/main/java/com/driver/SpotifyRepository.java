@@ -95,7 +95,7 @@ public class SpotifyRepository {
         Song song = new Song(title, length);
         songs.add(song);
         List<Song> listSong = new ArrayList<>();
-        if(albumSongMap.containsKey(title)){
+        if(albumSongMap.containsKey(album)){
             listSong = albumSongMap.get(album);
         }
         listSong.add(song);
